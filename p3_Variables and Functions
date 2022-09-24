@@ -1,4 +1,14 @@
-player_choice = "rock"
-computer_choice = "paper"
-print(player_choice)
-print(computer_choice)
+def get_choices():
+  player_choice = 'rock'
+  computer_choice = "paper"
+  
+  return player_choice
+
+def greeting():
+    return "Hi"
+
+response = greeting()
+choice = get_choices()
+
+print(response)
+print(choice)
