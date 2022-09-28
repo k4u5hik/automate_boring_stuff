@@ -21,4 +21,4 @@ for filename in os.listdir(path):
     else:
         print('Not an image: ' + filename)
 
-# Path: p6_Image_Editor.py
+# Pillow Docummantation: https://pillow.readthedocs.io/en/stable/index.html
