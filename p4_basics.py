@@ -11,3 +11,4 @@ print(type(name) == str) # type() is a function that returns the type of the var
 print(type(age) == int)
 print(isinstance(name, str)) # isinstance() is a function that returns True or False
 print(isinstance(age, int))
+
