@@ -17,3 +17,4 @@ print(isinstance(name, str)) # isinstance() is a function that returns True or F
 print(isinstance(age, int))
 print (name + " is " + str(age) + " years old in " + str(year)) # Convert integer to string
 
+print ("ud" in name) # True

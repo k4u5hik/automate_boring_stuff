@@ -21,4 +21,4 @@ for filename in os.listdir(path):
     else:
         print('Not an image: ' + filename)
 
-# Pillow Docummantation: https://pillow.readthedocs.io/en/stable/index.html
+# Pillow Documentation: https://pillow.readthedocs.io/en/stable/index.html
