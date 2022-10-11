@@ -3,7 +3,7 @@ from selenium.webdriver.chrome.service import Service
 import pandas as pd
 
 website = "https://news.ycombinator.com/news"
-path = "/usr/local/bin/chromedriver"
+path = "/usr/local/bin/chromedriver" # was getting permissions error without this path, it worked with the path
 
 service = Service(executable_path=path)
 driver = webdriver.Chrome(service=service)
