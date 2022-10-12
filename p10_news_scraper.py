@@ -31,6 +31,6 @@ for container in containers:
 
 my_dict = {'Number': titles, 'Headline': subtitles} # 'Link': links}
 df_headlines = pd.DataFrame(my_dict)
-df_headlines.to_csv('hackernews.csv', index=False)
+df_headlines.to_csv('hackernews-headless.csv', index=False)
 
 driver.quit()
