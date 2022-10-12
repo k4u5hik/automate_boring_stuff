@@ -1,16 +1,17 @@
+import os
+import sys
+from datetime import datetime
+
+import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
-import pandas as pd
-from datetime import datetime
-import os
-import sys
 
 # get the path of the executable that we will create. we will export the file in the same folder where the executable is
 application_path = os.path.dirname(sys.executable)
 # datetime will be used to customise the name of the filename
 now = datetime.now()
-month_day_year = now.strftime("%d-%m-%Y-%H:%M:%S") #string format of the current date and time. Search Python strftime cheatsheet.
+month_day_year = now.strftime("%d-DD-%m-MM-%Y-YYYY-%H-HR-%M-M-%S-S") #string format of the current date and time. Search Python strftime cheatsheet.
 
 website = "https://news.ycombinator.com/news"
 path = "/usr/local/bin/chromedriver" # was getting permissions error without this path, it worked with the path
