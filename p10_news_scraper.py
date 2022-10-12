@@ -14,14 +14,17 @@ containers = driver.find_elements(by="xpath", value='//tr[@class="athing"]')
 
 titles = []
 subtitles = []
+#links = []
 
 for container in containers:
     title = container.find_element(by="xpath", value='./td/span').text
     subtitle = container.find_element(by="xpath", value='./td/span/a').text
+    # link = container.find_element(by="xpath", value='./td/span/a').get_attribute("href")
     titles.append(title)
     subtitles.append(subtitle)
+    # links.append(link)
 
-my_dict = {'Number': titles, 'Headline': subtitles}
+my_dict = {'Number': titles, 'Headline': subtitles} # 'Link': links}
 df_headlines = pd.DataFrame(my_dict)
 df_headlines.to_csv('hackernews.csv', index=False)
 
